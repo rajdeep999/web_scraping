@@ -6,7 +6,6 @@ root = "https://subslikescript.com/"
 letter = 'B'
 url = root + 'movies_letter-'+letter
 response = requests.get(url)
-content = response.text
 
 soup = BeautifulSoup(content, 'lxml')
 
